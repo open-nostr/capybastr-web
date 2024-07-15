@@ -1,2 +1,0 @@
-# capybastr-web
-capybastr-web

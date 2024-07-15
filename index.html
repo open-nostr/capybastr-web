@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CapyBastr</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/./message.js"></script>
+    <!-- <script src="/./twitter.js"></script> -->
 
-    <!-- <link href="/./viewer.min.css" ref="stylesheet" />
-    <script src="/./viewer.min.js"></script> -->
+    <script>
+        // twitter auto resize
+      function adjustIframeHeight(event) {
+        if (event.data.iframeHeight && event.data.iframeSrc) {
+          var iframes = document.querySelectorAll("#twitter-iframe");
+          iframes.forEach((iframe) => {
+            iframe.style.height = event.data.iframeHeight + 24 + "px";
+          });
+        }
+      }
+
+      window.addEventListener("message", adjustIframeHeight, false);
+    </script>
+  <link rel="stylesheet" href="/./assets/main.dev.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css">
 </head>
 
-<body>
+  <body>
     <div id="main"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script>
 <script type="module">
-    import init from "/capybastr-web/assets/dioxus/capybastr.js";
-    init("/capybastr-web/assets/dioxus/capybastr_bg.wasm").then(wasm => {
+    import init from "/./assets/dioxus/capybastr.js";
+    init("/./assets/dioxus/capybastr_bg.wasm").then(wasm => {
       if (wasm.__wbindgen_start == undefined) {
         wasm.main();
       }
     });
     </script>
     </body>
-
 </html>
