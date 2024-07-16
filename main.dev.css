@@ -3815,9 +3815,6 @@ svg path {
 .qmsg .qmsg-item .qmsg-content [class^=qmsg-content-] .qmsg-icon {
   display: inline-block;
 }
-.qmsg .qmsg-item .qmsg-content [class^=qmsg-content-] .qmsg-icon svg path {
-  fill: rgb(103, 194, 58);
-}
 .qmsg .qmsg-item .qmsg-content [class^=qmsg-content-] .qmsg-icon:first-child {
   margin-right: 8px;
 }
@@ -3862,11 +3859,17 @@ svg path {
 .qmsg .qmsg-item .qmsg-content-error .qmsg-count {
   background-color: #F56C6C;
 }
+.qmsg .qmsg-item .qmsg-content-error svg path {
+  fill: #F56C6C;
+}
 .qmsg .qmsg-item .qmsg-content-success {
   color: #67C23A;
 }
 .qmsg .qmsg-item .qmsg-content-success .qmsg-count {
   background-color: #67C23A;
+}
+.qmsg .qmsg-item .qmsg-content-success svg path {
+  fill: #67C23A;
 }
 .qmsg .qmsg-item .qmsg-content-loading {
   color: #409eff;
