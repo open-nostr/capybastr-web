@@ -26,16 +26,13 @@
 
       window.addEventListener("message", adjustIframeHeight, false);
     </script>
-  <link rel="stylesheet" href="/./assets/main.dev.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css">
-</head>
+  </head>
 
   <body>
     <div id="main"></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script>
-<script type="module">
-    import init from "/./assets/dioxus/capybastr.js";
-    init("/./assets/dioxus/capybastr_bg.wasm").then(wasm => {
+  <script type="module">
+    import init from '/./assets/dioxus/capybastr.js?v=20240716104305';
+    init('/./assets/dioxus/capybastr_bg.wasm?v=20240716104305').then(wasm => {
       if (wasm.__wbindgen_start == undefined) {
         wasm.main();
       }
@@ -43,3 +40,4 @@
     </script>
     </body>
 </html>
+
