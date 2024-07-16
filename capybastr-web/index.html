@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="/./message.js"></script>
+    <script src="./message.js"></script>
     <!-- <script src="/./twitter.js"></script> -->
 
     <script>
@@ -31,8 +31,8 @@
   <body>
     <div id="main"></div>
   <script type="module">
-    import init from '/./assets/dioxus/capybastr.js?v=20240717014318';
-    init("/./assets/dioxus/capybastr_bg.wasm?v=20240717014318").then(wasm => {
+    import init from './assets/dioxus/capybastr.js?v=20240717014318';
+    init("./assets/dioxus/capybastr_bg.wasm?v=20240717014318").then(wasm => {
       if (wasm.__wbindgen_start == undefined) {
         wasm.main();
       }
