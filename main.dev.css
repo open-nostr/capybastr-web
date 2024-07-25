@@ -347,6 +347,10 @@ video {
   bottom: 5px;
 }
 
+.bottom-\[8px\] {
+  bottom: 8px;
+}
+
 .bottom-\[90px\] {
   bottom: 90px;
 }
@@ -421,6 +425,10 @@ video {
 
 .right-\[40px\] {
   right: 40px;
+}
+
+.right-\[47px\] {
+  right: 47px;
 }
 
 .right-\[5px\] {
